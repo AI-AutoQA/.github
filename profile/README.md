@@ -156,22 +156,22 @@ terraform output
 
 ## 시스템 아키텍처
 
-![시스템 아키텍처](./docs/image/architecture.svg)
+![시스템 아키텍처](../docs/image/architecture.svg)
 
 ## 기능구성
 
 | 기능 | 설명 |
 |---|---|
 | 회원 인증 | 이메일 인증 기반 회원가입, 로그인, 로그아웃, JWT 재발급, 아이디/비밀번호 찾기를 제공합니다. |
-| QA 파이프라인 시작 | 사용자가 대상 URL, 로그인 계정 정보, 자연어 요청을 입력하면 페이지 분석부터 시나리오 생성까지 자동 진행합니다. ![Main](./docs/image/Main.gif)|
-| 웹 페이지 분석 | Playwright Worker가 대상 사이트를 탐색하며 페이지 구조, 주요 요소, 링크 관계, 스크린샷, DOM 정보를 수집합니다. ![Analyze](./docs/image/Analyze.gif)|
-| 실시간 진행 표시 | Redis Pub/Sub과 Backend WebSocket을 통해 분석, AI 생성, 실행 단계의 상태와 로그를 Frontend에 실시간으로 전달합니다. ![Scenario](./docs/image/Scenario.png) |
-| AI 시나리오 생성 | AI GPU Worker가 분석 산출물과 사용자 프롬프트를 기반으로 QA 시나리오와 step suite를 생성합니다.  ![AIScenario](./docs/image/AIScenario.gif)|
-| 시나리오 검토/편집 | 생성된 시나리오를 실행 전 검토하고, 자연어로 시나리오를 추가하거나 기존 시나리오를 수정/삭제할 수 있습니다. ![ScenarioCheck](./docs/image/ScenarioCheck.png) |
-| QA 자동 실행 | 검토가 끝난 시나리오 suite를 Playwright Worker가 브라우저에서 실행하고, step별 상태와 실행 로그를 기록합니다.  ![Execution](./docs/image/Execution.gif) |
-| 결과 리포트 | 실행 결과, 성공/실패/경고 카운트, 소요 시간, 영상/스크린샷 등 산출물을 보고서 형태로 조회합니다. ![Report](./docs/image/Report.gif)|
-| 히스토리 관리 | 사용자별 QA 리포트 목록과 상세 결과를 조회하고, 이전 분석 결과로 다시 진입할 수 있습니다. ![History](./docs/image/History.png)|
-| 운영 모니터링 | CloudWatch Logs/Alarms, Jenkins, Redis Commander, Dozzle을 통해 배포와 운영 상태를 확인합니다. ![CloudWatchERD](./docs/image/CloudWatch.png)|
+| QA 파이프라인 시작 | 사용자가 대상 URL, 로그인 계정 정보, 자연어 요청을 입력하면 페이지 분석부터 시나리오 생성까지 자동 진행합니다. ![Main](../docs/image/Main.gif)|
+| 웹 페이지 분석 | Playwright Worker가 대상 사이트를 탐색하며 페이지 구조, 주요 요소, 링크 관계, 스크린샷, DOM 정보를 수집합니다. ![Analyze](../docs/image/Analyze.gif)|
+| 실시간 진행 표시 | Redis Pub/Sub과 Backend WebSocket을 통해 분석, AI 생성, 실행 단계의 상태와 로그를 Frontend에 실시간으로 전달합니다. ![Scenario](../docs/image/Scenario.png) |
+| AI 시나리오 생성 | AI GPU Worker가 분석 산출물과 사용자 프롬프트를 기반으로 QA 시나리오와 step suite를 생성합니다.  ![AIScenario](../docs/image/AIScenario.gif)|
+| 시나리오 검토/편집 | 생성된 시나리오를 실행 전 검토하고, 자연어로 시나리오를 추가하거나 기존 시나리오를 수정/삭제할 수 있습니다. ![ScenarioCheck](../docs/image/ScenarioCheck.png) |
+| QA 자동 실행 | 검토가 끝난 시나리오 suite를 Playwright Worker가 브라우저에서 실행하고, step별 상태와 실행 로그를 기록합니다.  ![Execution](../docs/image/Execution.gif) |
+| 결과 리포트 | 실행 결과, 성공/실패/경고 카운트, 소요 시간, 영상/스크린샷 등 산출물을 보고서 형태로 조회합니다. ![Report](../docs/image/Report.gif)|
+| 히스토리 관리 | 사용자별 QA 리포트 목록과 상세 결과를 조회하고, 이전 분석 결과로 다시 진입할 수 있습니다. ![History](../docs/image/History.png)|
+| 운영 모니터링 | CloudWatch Logs/Alarms, Jenkins, Redis Commander, Dozzle을 통해 배포와 운영 상태를 확인합니다. ![CloudWatchERD](../docs/image/CloudWatch.png)|
 
 ## 디렉토리 구조
 
@@ -348,8 +348,8 @@ loadtest/
 
 | 산출물 | 위치 |
 |---|---|
-| ERD | ![ERD](./docs/image/ERD.png) |
-| Swagger API Docs | 로컬 Swagger: http://localhost:8080/api/swagger-ui ![Swagger](./docs/image/Swagger.png) |
+| ERD | ![ERD](../docs/image/ERD.png) |
+| Swagger API Docs | 로컬 Swagger: http://localhost:8080/api/swagger-ui ![Swagger](../docs/image/Swagger.png) |
 | 영상 포트폴리오 | [영상 포트폴리오](https://youtu.be/ZZ0NRTQ7WQA) |
 | 기능명세서 | [기능명세서](https://www.notion.so/33a52d631e348106b4abd6b88058baba) |
 | API 명세서 | [API명세서](https://www.notion.so/REST-API-33a52d631e3481c3aa77e0156bc76c72) |
